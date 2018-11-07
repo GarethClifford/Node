@@ -1,8 +1,13 @@
 <html>
  <head>
- <title> Hello World! </title>
+ <title> Movie World! </title>
+ <h1>Welcome to my movie database :) </h1>
  </head>
  <body>
- <p>Hello!</p>
+   <p>Enter film name</p>
+   <input type = "text" id = "film" placeholder = "Film name"> <br></br>
+   <button onclick="window.location.href='/search/'+document.getElementById('film').value">Search for films</button>
+   <br></br>
+   <button onclick="window.location.href='/get/'+document.getElementById('film').value">Get film info</button>
  </body>
 </html>
